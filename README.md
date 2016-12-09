@@ -31,5 +31,6 @@ Example usage:
 ./omni-multicast-traffic.py -i 10.40.30.19 -s 2 -p 2 -v 319 -c public
 ```
 
-Example Output:
+
+
 ![Sample Screenshot](omni-multicast-traffic.png?raw=true "Sample Screenshot")
