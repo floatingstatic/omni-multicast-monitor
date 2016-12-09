@@ -32,3 +32,4 @@ Example usage:
 ```
 
 Example Output:
+![Sample Screenshot](omni-multicast-traffic.png?raw=true "Sample Screenshot")
