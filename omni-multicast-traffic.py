@@ -6,8 +6,6 @@ import argparse
 import sys
 import re
 
-
-
 def load_json(fname):
     with open(fname) as json_file:
         dict = json.loads(json_file.read())
@@ -155,9 +153,11 @@ while True:
         pps = diff / 5
         mbps = (((diff2 * 8) / 1024) / 1024) / 5
 
-        print "\033[2J";    #clear the screen
-        print "\033[0;0H"; #jump to 0,0
-        print colorize("Omniswitch Port: %s - %s/%s" % (ip,slot,port),"GREEN")
+
+        # Clear the screen
+        print "\033[2J"
+        # Jump to 0,0
+        print "\033[0;0H" + colorize("Omniswitch Port: %s - %s/%s" % (ip,slot,port),"GREEN")
 
         for i in igmp_r:
             i_key = str(i[0][0])
@@ -203,3 +203,5 @@ while True:
         sleep(5)
     except KeyboardInterrupt:
         sys.exit()
+
+
