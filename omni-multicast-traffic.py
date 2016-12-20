@@ -180,7 +180,7 @@ while True:
                     mcast_music += 1
                 mcast_count += 1
                 
-                print colorize("Multicast Group: ","BLUE") + mcast + colorize(" Life: ","BLUE") + lifetime + " seconds\t" + colorize("%s - %s" % (channel_num,channel_name),"YELLOW")
+                print colorize("Multicast Group: ","BLUE") + mcast + colorize(" Life: ","BLUE") + lifetime + " seconds \t" + colorize("%s - %s" % (channel_num,channel_name),"YELLOW")
         print "%s %s %s %s %s %s %s %s %s" % (colorize("Total IPTV Channels:","PINK"),colorize(str(mcast_count),"GREEN"),"(HD:",colorize(str(mcast_hd),"GREEN"),"SD:",colorize(str(mcast_sd),"GREEN"),"MUSIC:",colorize(str(mcast_music),"GREEN"),")")
         print "================================================";
         (pps_min, mbps_min) = calc_iptv_traffic(mcast_hd,mcast_sd,mcast_music)
